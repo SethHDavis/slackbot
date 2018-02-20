@@ -5,7 +5,9 @@ from slackclient import SlackClient
 from get_sprint import scrape
 
 # instantiate Slack client
-slack_client = SlackClient('xoxb-309232393618-U9ER9xlCI3u6bkJaRxisITcT')
+token = raw_input("What is the Bot User OAuth Access Token? ")
+slack_client = SlackClient(token)
+
 # starterbot's user ID in Slack: value is assigned after the bot starts up
 starterbot_id = None
 

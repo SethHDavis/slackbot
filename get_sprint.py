@@ -30,8 +30,6 @@ def scrape(username, password, company, board):
 			
 			if (key.split("-")[0].lower() == board.lower()):
 				text += "\n" + key + ", " + name + ", " + status
-			else:
-				text += ""
 
 			i += 1
 		
